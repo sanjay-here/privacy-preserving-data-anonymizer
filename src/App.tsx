@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Download, RotateCcw, AlertCircle } from 'lucide-react';
+import { Shield, Download, RotateCcw, AlertCircle, Heart } from 'lucide-react';
 import { FileUpload } from './components/FileUpload';
 import { DataPreview } from './components/DataPreview';
 import { ComparisonView } from './components/ComparisonView';
@@ -175,6 +175,16 @@ function App() {
           </div>
         )}
       </div>
+
+      {/* Footer */}
+      <footer className="mt-12 py-6 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center space-x-2 text-gray-600">
+            <span className="text-sm">Developed by Sanjay A</span>
+            <Heart className="h-4 w-4 text-red-500 fill-red-500 animate-pulse" />
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
